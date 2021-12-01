@@ -114,7 +114,6 @@ fetch: init $(COPY_SOURCE) $(REPOSITORY_RESOLVE)
 	jx secret convert edit
 
 # lets resolve chart versions and values from the version stream
-	jx gitops helmfile resolve
 
 # lets make sure we are using the latest jx-cli in the git operator Job
 	jx gitops image -s .jx/git-operator
