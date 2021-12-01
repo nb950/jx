@@ -20,8 +20,8 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
-    kind: ingress
+    domain: jx.docure.ai
+    externalDNS: false
     namespaceSubDomain: -jx.
     tls:
       email: ""
