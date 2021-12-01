@@ -113,8 +113,6 @@ fetch: init $(COPY_SOURCE) $(REPOSITORY_RESOLVE)
 # set any missing defaults in the secrets mapping file
 	jx secret convert edit
 
-# lets resolve chart versions and values from the version stream
-
 # lets make sure we are using the latest jx-cli in the git operator Job
 	jx gitops image -s .jx/git-operator
 
